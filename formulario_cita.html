@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario cita</title>
+</head>
+<body>
+    
+    <h1>Agendar cita</h1>
+
+    <form action="procesar_formulario" method="post">
+        <label for="nombrePaciente">Ingrese el nombre del paciente: </label>
+        <br> <br>
+        <input type="text" name="nombrePaciente" placeholder="Ej: Martha">
+        <br> <br> <br>
+
+        <label for="telefonoPaciente">Ingrese el teléfono del paciente: </label>
+        <br> <br>
+        <input type="text" name="telefonoPaciente" placeholder="Ej: 494 949 1020">
+        <br> <br>  <br>
+
+        <label for="correoPaciente">Ingrese el correo del paciente: </label>
+        <br> <br>
+        <input type="email" name="correoPaciente" placeholder="Ej: marthaperez@gmail.com">
+        <br> <br> <br>
+
+        <label for="fechaCita">Ingrese la fecha de cita: </label>
+        <br> <br>
+        <input type="date" name="fechaCita">
+        <br> <br> <br>
+
+        <label for="horaCita">Ingrese la hora de cita: </label>
+        <br> <br>
+        <input type="time" name="horaCita">
+        <br> <br> <br>
+
+        <label for="servicio">Seleccione el servicio que requiere: </label>
+        <br> <br>
+        <select>
+            <option disabled selected>Selecciona una opción</option>
+            <option value="Resinas">Resinas</option>
+            <option value="Limpieza">Limpieza</option>
+            <option value="Extracción">Extracción</option>
+        </select>
+        <br> <br> <br>
+
+        <label for="archivo">Ingrese la radiografía: </label>
+        <br> <br>
+        <input type="file" name="archivo">
+        <br> <br> <br>
+
+        <label for="comentarios">Agregar comentarios adicionales: </label>
+        <br> <br>
+        <textarea name="comentarios" id="comentarios" cols="50" rows="5"></textarea>
+        <br> <br>
+
+        <button type="submit"> -- ENVIAR -- </button>
+
+    </form>
+
+</body>
+</html>
